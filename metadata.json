@@ -1,0 +1,6 @@
+{
+  "name": "Cleaning Cycle Tracker",
+  "description": "화장실, 거실 청소 및 가전제품 필터 교체 등 주기별 청소 일정을 관리하고 통계와 체크리스트로 꼼꼼하게 관리하는 청소 주기 관리 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

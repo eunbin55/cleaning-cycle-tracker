@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>클린메이트 - Cleaning Cycle Tracker</title>
+    <!-- Android PWA Support -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1e1b4b" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/jpeg" href="/icon.jpg" />
+    <link rel="apple-touch-icon" href="/icon.jpg" />
+    
+    <!-- Unregister Service Worker & Clear Cache to resolve stale 404 loops -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) => {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+      if ('caches' in window) {
+        caches.keys().then((keys) => {
+          keys.forEach((key) => caches.delete(key));
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-[#0f172a]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

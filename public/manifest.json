@@ -1,0 +1,24 @@
+{
+  "name": "Cleaning Cycle Tracker",
+  "short_name": "CleanMate",
+  "description": "화장실, 거실 청소 및 가전제품 필터 교체 등 주기별 청소 일정을 관리하는 앱",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "maskable"
+    }
+  ]
+}
