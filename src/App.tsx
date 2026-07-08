@@ -535,7 +535,7 @@ export default function App() {
               setEditingTask(null);
               setIsFormOpen(true);
             }}
-            defaultCategory="regular"
+            defaultCategory="all"
           />
         )}
 
