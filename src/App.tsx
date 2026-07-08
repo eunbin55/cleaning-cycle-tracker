@@ -504,7 +504,7 @@ export default function App() {
           완료 이력
         </button>
 
-        <button
+        {/* <button
           onClick={() => setCurrentTab('guide')}
           className={`flex flex-col items-center gap-0.5 text-[10px] font-bold ${
             currentTab === 'guide' ? 'text-indigo-300' : 'text-white/50'
@@ -512,7 +512,7 @@ export default function App() {
         >
           <BookOpen size={20} />
           살림 가이드
-        </button>
+        </button> */}
       </div>
 
       {/* 메인 콘텐츠 영역 */}
